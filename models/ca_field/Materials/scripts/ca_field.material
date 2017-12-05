@@ -1,0 +1,153 @@
+material CAField/Left
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.900000 0.900000 0.900000 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture left.png
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}
+
+material CAField/Forward
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.900000 0.900000 0.900000 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture front.png
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}
+
+material CAField/Right
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.900000 0.900000 0.900000 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture right.png
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}
+
+material CAField/Stop
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.900000 0.900000 0.900000 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture stop.png
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}
+
+material CAField/Checkers
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.900000 0.900000 0.900000 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture checkers.png
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}
+
+material CAField/Park
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.900000 0.900000 0.900000 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture park.png
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}
+
+material CAField/Carpet
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+      emissive 0.6 0.6 0.6 1.000000
+
+      texture_unit
+      {
+        scale 1.0 1.0
+        texture carpet.jpg
+        filtering bilinear
+        rotate 90
+      }
+    }
+  }
+}

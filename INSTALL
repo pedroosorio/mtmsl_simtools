@@ -1,0 +1,20 @@
+#!/bin/bash
+#Install Script for minhosimulator package
+
+echo "Installing boost::Process library ..." &&
+sleep 1 &&
+sudo cp -r Libs/boost_process/* /usr/include/boost/ &&
+echo "boost::Process library installed" 
+
+var="$(more ~/.bashrc | grep -c gazebo_defs)"
+#echo "Found $var instances of gazebo_defs"
+
+if [[ "$var" > 0 ]]; then
+    echo "Gazebo paths already installed."
+else
+    echo "#gazebo_defs" >> ~/.bashrc
+    echo "export GAZEBO_MODEL_PATH=\$GAZEBO_MODEL_PATH:$HOME/catkin_ws/src/mtmsl_simtools/models" >> ~/.bashrc
+    echo "export GAZEBO_PLUGIN_PATH=\$GAZEBO_PLUGIN_PATH:$HOME/catkin_ws/src/mtmsl_simtools/bin" >> ~/.bashrc
+    echo "export GAZEBO_RESOURCE_PATH=\$GAZEBO_RESOURCE_PATH:$HOME/catkin_ws/src/mtmsl_simtools/worlds:/usr/share/gazebo-7" >> ~/.bashrc
+    echo "Gazebo paths installed."
+fi

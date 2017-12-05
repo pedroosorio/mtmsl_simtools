@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="ca_tft">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <plugin name="ca_tft_plugin" filename="libca_tft.so">
+        </plugin>
+        <geometry>
+          <plane>
+            <size>0.2286 0.36576</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ca_field/Materials/scripts/</uri>
+            <uri>model://ca_field/Materials/textures/</uri>
+            <name>CAField/Stop</name>
+          </script>
+        </material>
+      </visual>  
+    </link>  
+  </model>
+</sdf>

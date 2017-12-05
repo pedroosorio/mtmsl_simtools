@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="ca_obstacle">
+   <pose>0 0 0.115 0 0 0</pose>
+    <static>true</static>
+    <link name="box">
+        <inertial>
+          <mass>0.41</mass>
+        </inertial>
+        
+        <visual name="visual">
+         <geometry>
+           <box>
+             <size>0.6 0.6 0.6</size>
+           </box>
+         </geometry>
+         <material>
+          <script>
+             <uri>model://ca_field/Materials/scripts/</uri>
+             <uri>model://ca_field/Materials/textures/</uri>
+             <name>CAField/Carpet</name>
+          </script>
+         </material>
+       </visual>  
+       
+       <collision name="col">
+         <geometry>
+           <box>
+             <size>0.6 0.6 0.6</size>
+           </box>
+         </geometry>
+       </collision>
+       
+    </link>
+  </model>
+</sdf>
